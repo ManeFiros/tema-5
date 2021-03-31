@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import ComponenteEventos from './ComponenteEventos'
 
 class Input extends Component{
-    WebGL2RenderingContext(){
+    render() {
+        return (
         <div>
-            <input OnKeyPress="manejarPulsacionesTeclado" onKeyDown="manejarDown" />
+            <input onKeyPress={ComponenteEventos.manejarPulsacionesTeclado} 
+                    onKeyDown={ComponenteEventos.onKeyDown} />
+            <label>{ComponenteEventos.texto}</label>
         </div>
-    };
+        );
+    }
 }
 
 export default Input;
