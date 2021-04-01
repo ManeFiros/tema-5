@@ -17,7 +17,7 @@ function ComponenteEventos (){
         <div>
             <input onKeyPress={manejarPulsacionesTeclado} onKeyDown={manejarDown} />
             <br/>
-            <label>Label: {texto}</label>
+            <label>{texto}</label>
         </div>
     );
 }

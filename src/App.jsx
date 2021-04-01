@@ -4,7 +4,7 @@ import ComponenteEventos from './components/ComponenteEventos';
 
 function App() {
   return (
-    <div className="App" onMouseMove={capturarRaton}>
+    <div className="App">
       <header className="App-header">
         <ComponenteEventos/>
       </header>
