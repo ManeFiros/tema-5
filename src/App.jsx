@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Input from './components/Input'
-import ComponenteEventos from './components/ComponenteEventos'
+import ComponenteEventos from './components/ComponenteEventos';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" onMouseMove={capturarRaton}>
       <header className="App-header">
         <ComponenteEventos/>
       </header>
